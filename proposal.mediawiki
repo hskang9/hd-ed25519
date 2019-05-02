@@ -178,12 +178,13 @@ client software to understand its uses and make components which is needed for i
 
 ==Examples==
 
+
 {|
- !purpose
- !chain_type
- !usage
- !address_index
- !path
+!purpose
+!chain_type
+!usage
+!address_index
+!path
 |-
 |0
 |Bitcoin
@@ -205,33 +206,9 @@ client software to understand its uses and make components which is needed for i
 |-
 |0
 |Zerochain
-|sign/verify
-|first
-|m / 0' / 0' / 1' / 0'
-|-
-|0
-|Zerochain
-|encrypt/decrypt
-|first
-|m / 0' / 0' / 2' / 0'
-|-
-|0
-|Zerochain
 |origin
 |second
 |m / 0' / 0' / 0' / 1'
-|-
-|0
-|Zerochain
-|sign/verify
-|second
-|m / 0' / 0' / 1' / 1'
-|-
-|0
-|Zerochain
-|encrypt/decrypt
-|second
-|m / 0' / 0' / 2' / 1'
 |-
 |}
 
