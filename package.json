@@ -1,0 +1,56 @@
+{
+  "version": "0.0.0",
+  "private": false,
+  "name": "speckle-hdkey-lib",
+  "engines": {
+    "node": ">=10.13.0",
+    "yarn": "^1.10.1"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/app/react/setupTests.js",
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "engines": {
+    "node": "^10.13.0",
+    "yarn": "^1.10.1"
+  },
+  "scripts": {
+    "build": "polkadot-dev-build-ts && polkadot-dev-build-docs",
+    "check": "tslint --project . && tsc --noEmit --pretty",
+    "clean": "polkadot-dev-clean-build",
+    "postinstall": "polkadot-dev-yarn-only",
+    "test": "jest --coverage"
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.7.1",
+    "jest-config": "^24.7.1",
+    "ts-jest": "^24.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@polkadot/dev": "^0.27.1",
+    "@polkadot/ts": "^0.1.56",
+    "gh-pages": "^2.0.1",
+    "@polkadot/keyring": "^0.76.1",
+    "@polkadot/util": "^0.76.1",
+    "@polkadot/util-crypto": "^0.76.1",
+    "@polkadot/wasm": "^0.2.1",
+    "tweetnacl": "^1.0.1"
+  }
+}

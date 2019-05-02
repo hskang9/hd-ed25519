@@ -1,0 +1,19 @@
+
+{
+  "extends": "./node_modules/@polkadot/dev/config/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@polkadot/keyring": [ "node_modules/@polkadot/keyring" ],
+      "@polkadot/keyring/*": [ "node_modules/@polkadot/keyring/*" ],
+      "@polkadot/util-crypto": [ "node_modules/@polkdot/util-crypto" ],
+      "@polkadot/util-crypto/*": [ "node_modules/@polkadot/util-crypto/*" ],
+      "@polkadot/util": [ "node_modules/@polkadot/util" ],
+      "@polkadot/util/*": [ "node_modules/@polkadot/util/*" ]
+    },
+    "typeRoots": [
+      "./node_modules/@polkadot/ts",
+      "./node_modules/@types"
+    ]
+  }
+}
