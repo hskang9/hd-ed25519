@@ -1,6 +1,6 @@
 # hd-ed25519
 
-hierarchical deterministic wallet for edwards curve algorithm(ed25519)
+hierarchical deterministic wallet library for edwards curve algorithm(ed25519)
 
 # Installation
 `npm i --save hd-ed25519`
