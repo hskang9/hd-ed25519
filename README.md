@@ -11,7 +11,7 @@ import {mnemonicGenerate, mnemonicToSeed} from '@polkadot/util-crypto'
 import HDKey from 'speckle-hdkey-lib'
 import Keyring from '@polkadot/keyring';
 
-var mnemonic = mnemonicGenerate() // # of words: 12(default), 15, 18, 21, 24
+var mnemonic = mnemonicGenerate() // number of words: 12(default), 15, 18, 21, 24
 var seed = mnemonicToSeed(mnemonic)
 var hdkey = HDKey(seed)
 var keyring = new Keyring()
@@ -23,7 +23,7 @@ keyring.getPairs()
 
 Derived keys save Extended keys and index to generate Child keys
 
-# Usage
+## Usage
 ```typescript
 var derivdedKey = hdkey.derive("m/0'/12'/1'/0'")
 
