@@ -1,10 +1,9 @@
-# speckle-hdkey-lib
+# hd-ed25519
 
-Hierarchical Deterministic Keys for Parachains and Substrate-based chains in the Polkadot network
-[proposal](./proposal.mediawiki)
+hierarchical deterministic wallet for edwards curve algorithm(ed25519)
 
 # Installation
-`npm i --save speckle-hdkey-lib`
+`npm i --save hd-ed25519`
 
 # Usage
 ```typescript
@@ -33,9 +32,5 @@ var childKey1 = derivedKey.deriveChild(1); // derive("m/0'/12'/1'/0'/1'")
 var childKey2 = derivedKey.deriveChild(2); // derive("m/0'/12'/1'/0'/2'")
 var childKey3 = derivedKey.deriveChild(3); // derive("m/0'/12'/1'/0'/3'")
 ```
-
-# Registered Chain Type
-
-TODO: Make Registered chain type table
 
 
