@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "private": false,
-  "name": "speckle-hdkey-lib",
+  "name": "hd-ed25519",
   "engines": {
     "node": ">=10.13.0",
     "yarn": "^1.10.1"
